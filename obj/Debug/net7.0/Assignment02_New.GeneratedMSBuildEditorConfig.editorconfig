@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Assignment02_New
+build_property.RootNamespace = Assignment02_New
+build_property.ProjectDir = /Users/admin/Dev/Assignment02_New/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/admin/Dev/Assignment02_New
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudHMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Accounts/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudHMvTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnkvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Member/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtYmVyL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Member/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtYmVyL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Member/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtYmVyL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Member/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtYmVyL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Member/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtYmVyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Pizzas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emFzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Pizzas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emFzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Pizzas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emFzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Pizzas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emFzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Pizzas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emFzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Supplier/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VwcGxpZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Supplier/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VwcGxpZXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Supplier/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VwcGxpZXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Supplier/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VwcGxpZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Supplier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VwcGxpZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Dev/Assignment02_New/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zl3len9h4f

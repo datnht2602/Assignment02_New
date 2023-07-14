@@ -1,0 +1,119 @@
+@page
+@model Assignment02_New.Pages.Pizzas.IndexModel
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Index</h1>
+ 
+<p> 
+    <a onclick="showInPopup('@Url.Page("/pizzas/create")','Create')" class="btn btn-secondary text-white">Create New</a> 
+</p>
+<form asp-page="./Index" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Find:
+                <input type="text" name="searchString" value="@Model.CurrentFilter"/>
+                <input type="submit" value="Search" class="btn btn-primary"/>
+                <a asp-page="./Index" class="btn btn-primary">Back to full list</a>
+            </p>
+        </div>
+    </form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort"
+                asp-route-currentFilter = "@Model.CurrentFilter">
+                    @Html.DisplayNameFor(model => model.Products[0].ProductName)
+                    </a>
+                
+            </th>
+            <th>
+                 <a asp-page="./Index" asp-route-sortOrder="@Model.SuppliersSort"
+                asp-route-currentFilter = "@Model.CurrentFilter">
+                   @Html.DisplayNameFor(model => model.Products[0].Suppliers.CompanyName)
+                    </a>
+                
+            </th>
+            <th>
+                 <a asp-page="./Index" asp-route-sortOrder="@Model.CategoriesSort"
+                asp-route-currentFilter = "@Model.CurrentFilter">
+                   @Html.DisplayNameFor(model => model.Products[0].Categories.CategoryName)
+                    </a>
+               
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].QuantityPerUnit)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.PriceSort"
+                asp-route-currentFilter = "@Model.CurrentFilter">
+                @Html.DisplayNameFor(model => model.Products[0].UnitPrice)
+                    </a>
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].ProductImage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Products) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suppliers.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categories.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantityPerUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                <img height="100px" height="100px" class="img" alt="My Image" src="@item.ProductImage"/>
+                
+            </td>
+            <td>
+                <a onclick="showInPopup('@Url.Page("/pizzas/edit",new { id = item.ProductID })','Edit')" class="btn btn-success text-white">Edit</a> |
+                <a onclick="showInPopup('@Url.Page("/pizzas/details",new { id = item.ProductID })','Details')" class="btn btn-info text-white">Details</a> |
+               <a onclick="showInPopup('@Url.Page("/pizzas/delete",new { id = item.ProductID })','Delete')" class="btn btn-danger text-white">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@{
+    var prevDisabled = !Model.Products.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Products.HasNextPage ? "disabled" : "";
+}
+<a asp-page="Index"
+asp-route-sortOrder="@Model.CurrentSort"
+asp-route-pageIndex="@(Model.Products.PageIndex -1)"
+asp-route-currentFilter="@Model.CurrentFilter"
+class="btn btn-primary @prevDisabled">
+Previous
+</a>
+<a asp-page="Index"
+asp-route-sortOrder="@Model.CurrentSort"
+asp-route-pageIndex="@(Model.Products.PageIndex +1)"
+asp-route-currentFilter="@Model.CurrentFilter"
+class="btn btn-primary @nextDisabled">
+Next
+</a>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Assignment02_New</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet" />
+    <script src="Scripts/toastr/toastr.js"></script>
+    <link rel="stylesheet" href="~/Assignment02_New.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Assignment02_New</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        
+                    
+                        @{
+                            string username = Context.Request.HttpContext.Session.GetString("CurrentAccount");
+                            int? accountType = Context.Request.HttpContext.Session.GetInt32("AccountType");
+                        }
+                        @if(username == null){
+                             <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/member/Create">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Accounts/Login">Accounts</a>
+                        </li>
+                        }else{
+                            if(accountType == 1)
+                            {
+                                    <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Pizzas/Index">Pizzas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Category/Index">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Supplier/Index">Supplier</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Members/Index">Customer Lists</a>
+                        </li>
+                            }
+                            else{
+                                 <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/CustomerOrders/CustomerOrder">Orders History</a>
+                            </li>
+                            }
+                            
+                        }
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if(username != null){
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area=""  asp-page="/Cart/Index">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area=""  asp-page="/Personal/Details">
+                            Hello @username
+                            </a>
+                        </li>
+                      <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Accounts/Logout">Logout</a>
+                        </li>
+                        }
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" ></h5>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Assignment02_New - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css "></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{F649A709-795F-4BC3-B872-20BC3B925FC4}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Pizzas/Index.cshtml">
+    <Files>
+      <File FileName="Program.cs" />
+      <File FileName="Pages/Shared/_Layout.cshtml" />
+      <File FileName="Models/Products.cs" />
+      <File FileName="Pages/Category/Create.cshtml" />
+      <File FileName="Pages/Pizzas/Create.cshtml" />
+      <File FileName="Pages/Pizzas/Create.cshtml.cs" />
+      <File FileName="Models/Suppliers.cs" />
+      <File FileName="Models/Categories.cs" />
+      <File FileName="Models/Orders.cs" />
+      <File FileName="Pages/Pizzas/Index.cshtml" Line="56" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment02_New" expanded="True">
+            <Node name="Assignment02_New" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Category" expanded="True" />
+                <Node name="Pizzas" expanded="True">
+                  <Node name="Create.cshtml" expanded="True" />
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assignment02__New PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

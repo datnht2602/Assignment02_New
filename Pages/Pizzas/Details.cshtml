@@ -1,0 +1,52 @@
+@page
+@model Assignment02_New.Pages.Pizzas.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = null;
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.ProductName)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Products.ProductName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.Suppliers)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Products.Suppliers.Address)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.Categories)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Products.Categories.CategoryName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.QuantityPerUnit)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Products.QuantityPerUnit)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.UnitPrice)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Products.UnitPrice)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Products.ProductImage)
+        </dt>
+        <dd class="col-sm-8">
+             <img height="100px" height="100px" class="img" alt="My Image" src="@Model.Products.ProductImage"/>
+        </dd>
+    </dl>
+</div>
