@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Assignment02_New.Data;
 using Assignment02_New.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Assignment02_New.Pages.Pizzas
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly Assignment02_New.Data.ApplicationDBContext _context;

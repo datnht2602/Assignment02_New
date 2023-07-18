@@ -23,21 +23,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         
                     
-                        @{
-                            string username = Context.Request.HttpContext.Session.GetString("CurrentAccount");
-                            int? accountType = Context.Request.HttpContext.Session.GetInt32("AccountType");
-                        }
-                        @if(username == null){
                              <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/member/Create">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Accounts/Login">Accounts</a>
-                        </li>
-                        }else{
-                            if(accountType == 1)
-                            {
-                                    <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Pizzas/Index">Pizzas</a>
                         </li>
                         <li class="nav-item">
@@ -49,31 +35,7 @@
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Members/Index">Customer Lists</a>
                         </li>
-                            }
-                            else{
-                                 <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/CustomerOrders/CustomerOrder">Orders History</a>
-                            </li>
-                            }
-                            
-                        }
-                    </ul>
-                    <ul class="navbar-nav">
-                        @if(username != null){
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area=""  asp-page="/Cart/Index">Cart</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""  asp-page="/Personal/Details">
-                            Hello @username
-                            </a>
-                        </li>
-                      <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Accounts/Logout">Logout</a>
-                        </li>
-                        }
-                        
-                    </ul>
+                        </ul>
                     <partial name= "_LoginPartial"/>
                 </div>
             </div>
