@@ -14,12 +14,11 @@ builder.Services.AddDbContext<ApplicationDBContext>(
 // builder.Services.Configure<RouteOptions>(routeOptions =>{
 //     routeOptions.LowercaseUrls  = true;
 // });
-// builder.Services.AddIdentity<AppUser,IdentityRole>()
-// .AddEntityFrameworkStores<ApplicationDBContext>()
-// .AddDefaultTokenProviders();
-builder.Services.AddDefaultIdentity<AppUser>()
+builder.Services.AddIdentity<AppUser,IdentityRole>()
 .AddEntityFrameworkStores<ApplicationDBContext>()
 .AddDefaultTokenProviders();
+// builder.Services.AddDefaultIdentity<AppUser>()
+// .AddEntityFrameworkStores<ApplicationDBContext>();
 builder.Services.Configure<IdentityOptions> (options => {
     // Thiết lập về Password
     options.Password.RequireDigit = false; // Không bắt phải có số
